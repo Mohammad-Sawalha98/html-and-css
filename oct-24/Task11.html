@@ -9,16 +9,12 @@
     <style>
 
 
-
 .main{
 
 background-color: burlywood;
 display: flex;
 height: 550px;
-font-size:70px  ;
-
-
-
+font-size:50px  ;
 
 }
 
@@ -61,6 +57,36 @@ margin: 5px 0px;
     margin-right: 5px;
 }
 
+
+@media only screen and (min-device-width:0px) and (max-device-width:480px){
+   
+   .main{flex-wrap: wrap;
+    background-color: burlywood;
+
+    padding: 5px;
+   }
+   div{margin: 0px;}
+
+   #one{margin-left: 0px;}
+   #nine{margin-right: 0px;}
+   
+} 
+
+@media only screen and (min-device-width:481px) and (max-device-width:768px){
+   .main{flex-wrap: wrap;
+    margin-left: 175px;
+    padding: 5px;
+   
+   }
+div{margin: 0px;
+    width: 50%;
+}
+   #one{margin-left: 0px;}
+   #nine{margin-right: 0px;}
+  
+
+
+}
 
 
     </style>

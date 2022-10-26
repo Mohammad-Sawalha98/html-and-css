@@ -15,7 +15,7 @@
 
 display: flex;
 height: 550px;
-font-size:70px ;
+font-size:50px ;
 
 
 
@@ -34,14 +34,25 @@ margin: 5px 0px;
 
 #one{
     background-color: orange;
+    width: 50%;
     padding-top: 200px;
 }
 #tow{
     background-color: blue;
     padding-top: 200px;
+    width: 50%;
 }
 
+@media only screen and (min-device-width:0px) and (max-device-width:480px){
+  .main{flex-wrap: wrap;}
+    #one{width: 100%;}
+    div{margin: 0;}
+ } 
 
+@media only screen and (min-device-width:481px) and (max-device-width:768px){
+    
+
+}
 
     </style>
 
